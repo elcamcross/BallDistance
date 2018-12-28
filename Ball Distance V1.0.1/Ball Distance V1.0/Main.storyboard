@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Leaderboards-->
+        <scene sceneID="8kt-eg-erg">
+            <objects>
+                <viewController id="MWi-1X-jaz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9e-MY-6ZU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2wv-Aa-h6j"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Leaderboards" id="4gQ-pV-VWd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3MX-Nk-yab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="786"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OV5-u3-GwM">
+            <objects>
+                <viewController id="QRC-dL-Kus" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tR4-aN-sTy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MwC-vf-Nmy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQQ-S4-bBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="104"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Y0X-jX-nLD">
+            <objects>
+                <viewController id="OaI-vq-7mr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9F8-Ug-i9b">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="XFJ-XO-UOs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="first" id="uE2-ei-t1V"/>
+                    <connections>
+                        <segue destination="QRC-dL-Kus" kind="show" id="Zkf-pf-W4Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9J-fo-HPh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="104"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sTW-Mp-MjA">
+            <objects>
+                <tabBarController id="RrY-UZ-d6D" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aaA-NC-zSJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OaI-vq-7mr" kind="relationship" relationship="viewControllers" id="CVQ-K5-LF9"/>
+                        <segue destination="MWi-1X-jaz" kind="relationship" relationship="viewControllers" id="MgQ-fG-1oO"/>
+                        <segue destination="RS1-yA-zMy" kind="relationship" relationship="viewControllers" id="9Ha-im-BNb"/>
+                        <segue destination="Jbr-7Z-OwK" kind="relationship" relationship="viewControllers" id="Z38-DC-1X6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5K-3y-xR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-784" y="1110"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="jbc-qT-ey7">
+            <objects>
+                <viewController id="RS1-yA-zMy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7b-8Z-Ok8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GLp-lN-gn8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="CYZ-9N-8IS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xwL-i5-5xj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="1448"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="SXk-V8-XMP">
+            <objects>
+                <viewController id="Jbr-7Z-OwK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uRJ-6Q-LA2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Creators" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-7W-1HL">
+                                <rect key="frame" x="20" y="75" width="374" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="43"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Cameron Cross" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jsQ-DJ-1i1">
+                                <rect key="frame" x="0.0" y="174" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" lookupSuggestion="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Owen Thurm" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5r5-tx-iJn">
+                                <rect key="frame" x="0.0" y="231" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Contact Us" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VL0-d0-LER">
+                                <rect key="frame" x="20" y="371" width="374" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="43"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="E-mail: ballDistance@gmail.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-AU-vNP">
+                                <rect key="frame" x="0.0" y="469" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Phone: (207)123-4567" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sZf-UJ-qJ1">
+                                <rect key="frame" x="0.0" y="526" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Website: www.ballDistance.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-zh-nSG">
+                                <rect key="frame" x="0.0" y="583" width="414" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="RbF-QE-9hM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" id="YRi-Sk-BcI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rMk-LH-wyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="2156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+    </resources>
+</document>
